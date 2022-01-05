@@ -1,0 +1,12 @@
+﻿@model PeopleSearchResults
+
+<h2>People</h2>
+<p>Count: @Model.count</p>
+<p>----------------------------------</p>
+@foreach (Person p in Model.results)
+{
+    <p>Name: @p.name</p>
+    <p>URL: @p.url</p>
+    <p>Homeworld URL: @p.homeworld</p>
+    <p>----------------------------------</p>
+}
